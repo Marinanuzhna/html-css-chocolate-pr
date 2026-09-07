@@ -1,0 +1,32 @@
+.made {
+}
+.made-title {
+}
+.made-ill {
+}
+.made-caption {
+  max-width: 350px;
+  margin-bottom: 28px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.made-wrapper {
+  display: flex;
+  gap: 20px;
+}
+.mate-list {
+}
+.made-left-side {
+  border-radius: 16px;
+  overflow: hidden;
+}
+.made-rights-side {
+  border-radius: 15px;
+  padding: 32px;
+  width: 516px;
+  background-color: #fff;
+}
+.made-item:not(:last-child) {
+  margin-bottom: 24px;
+}

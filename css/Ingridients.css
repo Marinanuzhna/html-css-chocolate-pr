@@ -1,0 +1,38 @@
+.ingr {
+  padding-top: 120px;
+}
+
+.ingr-title {
+}
+
+.ingr-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.ingr-item {
+  width: calc((100% - 32px * 3) / 4);
+
+  border-radius: 15px;
+  padding: 28px 24px;
+}
+.ingr-ill {
+  margin-bottom: 36px;
+}
+.ingr-item:nth-child(2n) {
+  background-color: #fff;
+  border: 1px solid #fd9222;
+}
+.ingr-item:nth-child(4n + 1) {
+  background-color: #fd9222;
+  color: #fff;
+}
+.ingr-item:nth-child(4n + 3) {
+  background-color: #1e1823;
+  color: #fff;
+}
+.ingr-caption {
+  font-size: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+}
