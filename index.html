@@ -39,18 +39,21 @@
     <!-- Header section-->
     <header class="header" id="home">
       <div class="container">
-        <a class="logo" href="./index.html"><i>SIMPLY</i> CHOCOLATE</a>
-        <img
-          class="logo-icon"
-          src="./images/icons/chocolate.svg"
-          alt="Site logo"
-          width="24"
-          height="24"
-        />
+        <a class="logo" href="./index.html"
+          ><i>SIMPLY</i> CHOCOLATE
+          <svg class="logo-icon" width="24" height="24">
+            <use href="./images/icons.svg#chocolatel"></use>
+          </svg>
+        </a>
+        <button class="mobile-menu-btn" type="button">
+          <svg class="mobile-menu-btn-icon" width="28" height="28">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
         <nav class="main-nav">
           <ul class="main-nav-list">
             <li class="main-nav-item">
-              <a class="main-nav-link" href="#home">Home</a>
+              <a class="main-nav-link current" href="#home">Home</a>
             </li>
             <li class="main-nav-item">
               <a class="main-nav-link" href="#made">How it’s made?</a>
@@ -68,13 +71,9 @@
               target="_blank"
               rel="noopener noreferrrer"
             >
-              <img
-                class="social-icon"
-                src="./images/icons/facebook.svg"
-                alt="facebook icon"
-                width="24"
-                height="24"
-              />
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
             </a>
           </li>
           <li class="socials-item">
@@ -84,13 +83,9 @@
               target="_blank"
               rel="noopener noreferrrer"
             >
-              <img
-                class="social-icon"
-                src="./images/icons/instagram.svg"
-                alt="instagram icon"
-                width="24"
-                height="24"
-              />
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
             </a>
           </li>
           <li class="socials-item">
@@ -100,13 +95,9 @@
               target="_blank"
               rel="noopener noreferrrer"
             >
-              <img
-                class="social-icon"
-                src="./images/icons/twitter.svg"
-                alt="the X icon"
-                width="24"
-                height="24"
-              />
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -129,13 +120,9 @@
               <a class="hero-link" href="#benefits"
                 >scroll down
                 <span class="hero-link-circle">
-                  <img
-                    class="hero-link-icon"
-                    src="./images/icons/arrow-down.svg"
-                    alt="arrow down icon"
-                    width="22"
-                    height="22"
-                  />
+                  <svg class="hero-link-icon" width="22" height="22">
+                    <use href="./images/icons.svg#arrow-down"></use>
+                  </svg>
                 </span>
               </a>
             </div>
@@ -149,6 +136,11 @@
           <h2 class="sr-only">Our benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#chocolate"></use>
+                </svg>
+              </div>
               <h3 class="benefits-subtitle">Unsurpassed taste</h3>
               <p class="benefits-desc">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -158,6 +150,11 @@
               </p>
             </li>
             <li class="benefits-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#coin"></use>
+                </svg>
+              </div>
               <h3 class="benefits-subtitle">Affordable price</h3>
               <p class="benefits-desc">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -168,6 +165,11 @@
               </p>
             </li>
             <li class="benefits-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#spoon"></use>
+                </svg>
+              </div>
               <h3 class="benefits-subtitle">Own production</h3>
               <p class="benefits-desc">
                 We take pride in our own production process, ensuring that every
@@ -188,72 +190,142 @@
           </h2>
           <ul class="ingr-list">
             <li class="ingr-item">
+              <button class="ingr-btn" type="button">
+                <svg class="ingr-icon" width="24" height="24">
+                  <use href="./images/icons.svg#arrow"></use>
+                </svg>
+              </button>
               <img
                 class="ingr-ill"
+                srcset="
+                  ./images/ingredients/img-1.png    1x,
+                  ./images/ingredients/img-1@2x.png 2x
+                "
                 src="./images/ingredients/img-1.png"
                 alt="MILK CHOCOLATE"
-                width="212"
-                height="160"
+                width="236"
+                height="178"
+                loading="lazy"
               />
               <h3 class="ingr-caption">MILK CHOCOLATE</h3>
             </li>
             <li class="ingr-item">
+              <button class="ingr-btn" type="button">
+                <svg class="ingr-icon" width="24" height="24">
+                  <use href="./images/icons.svg#arrow"></use>
+                </svg>
+              </button>
               <img
                 class="ingr-ill"
+                srcset="
+                  ./images/ingredients/img-2.png    1x,
+                  ./images/ingredients/img-2@2x.png 2x
+                "
                 src="./images/ingredients/img-2.png"
                 alt="MILK"
-                width="212"
-                height="160"
+                width="236"
+                height="178"
+                loading="lazy"
               />
               <h3 class="ingr-caption">MILK</h3>
             </li>
             <li class="ingr-item">
+              <button class="ingr-btn" type="button">
+                <svg class="ingr-icon" width="24" height="24">
+                  <use href="./images/icons.svg#arrow"></use>
+                </svg>
+              </button>
               <img
                 class="ingr-ill"
+                srcset="
+                  ./images/ingredients/img-3.png    1x,
+                  ./images/ingredients/img-3@2x.png 2x
+                "
                 src="./images/ingredients/img-3.png"
                 alt="NUTS"
-                width="212"
-                height="160"
+                width="236"
+                height="178"
+                loading="lazy"
               />
               <h3 class="ingr-caption">NUTS</h3>
             </li>
             <li class="ingr-item">
+              <button class="ingr-btn" type="button">
+                <svg class="ingr-icon" width="24" height="24">
+                  <use href="./images/icons.svg#arrow"></use>
+                </svg>
+              </button>
               <img
                 class="ingr-ill"
+                srcset="
+                  ./images/ingredients/img-4.png    1x,
+                  ./images/ingredients/img-4@2x.png 2x
+                "
                 src="./images/ingredients/img-4.png"
                 alt="SEMI-SWEET CHOCOLATE"
-                width="212"
-                height="160"
+                width="236"
+                height="178"
+                loading="lazy"
               />
               <h3 class="ingr-caption">SEMI-SWEET CHOCOLATE</h3>
             </li>
             <li class="ingr-item">
+              <button class="ingr-btn" type="button">
+                <svg class="ingr-icon" width="24" height="24">
+                  <use href="./images/icons.svg#arrow"></use>
+                </svg>
+              </button>
               <img
                 class="ingr-ill"
+                srcset="
+                  ./images/ingredients/img-5.png    1x,
+                  ./images/ingredients/img-5@2x.png 2x
+                "
                 src="./images/ingredients/img-5.png"
                 alt="CACAO"
-                width="212"
-                height="160"
+                width="236"
+                height="178"
+                loading="lazy"
               />
               <h3 class="ingr-caption">CACAO</h3>
             </li>
             <li class="ingr-item">
+              <button class="ingr-btn" type="button">
+                <svg class="ingr-icon" width="24" height="24">
+                  <use href="./images/icons.svg#arrow"></use>
+                </svg>
+              </button>
               <img
                 class="ingr-ill"
+                srcset="
+                  ./images/ingredients/img-6.png    1x,
+                  ./images/ingredients/img-6@2x.png 2x
+                "
                 src="./images/ingredients/img-6.png"
                 alt="RASPBERRY"
-                width="212"
-                height="160"
+                width="236"
+                height="178"
+                loading="lazy"
               />
               <h3 class="ingr-caption">RASPBERRY</h3>
             </li>
             <li class="ingr-item">
+              <button class="ingr-btn" type="button">
+                <svg class="ingr-icon" width="24" height="24">
+                  <use href="./images/icons.svg#arrow"></use>
+                </svg>
+              </button>
               <img
                 class="ingr-ill"
+                srcset="
+                  ./images/ingredients/img-7.png    1x,
+                  ./images/ingredients/img-7@2x.png 2x
+                "
                 src="./images/ingredients/img-7.png"
                 alt="COCONUT OIL"
-                width="212"
-                height="160"
+                width="236"
+                height="178"
+                loading="lazy"
               />
               <h3 class="ingr-caption">COCONUT OIL</h3>
             </li>
@@ -270,10 +342,15 @@
             <div class="made-left-side">
               <img
                 class="made-ill"
+                srcset="
+                  ./images/made/leftside.jpg    1x,
+                  ./images/made/leftside@2x.png 2x
+                "
                 src="./images/made/leftside.jpg"
                 alt="made"
                 width="600"
                 height="400"
+                loading="lazy"
               />
             </div>
             <div class="made-rights-side">
@@ -316,10 +393,13 @@
             <li class="products-item">
               <img
                 class="products-pic"
+                srcset="./images/products/img-1.jpg 1x,
+                ./images/products/img-1@2x.jpg 2x"
                 src="./images/products/img-1.jpg"
                 alt="orange"
                 width="230"
-                height="201"
+                height="200"
+                loading="lazy"
               />
               <h3 class="products-name">Orange</h3>
               <p class="products-type">Dark chocolate</p>
@@ -328,10 +408,13 @@
             <li class="products-item">
               <img
                 class="products-pic"
+                srcset="./images/products/img-2.jpg 1x,
+                ./images/products/img-2@2x.jpg 2x"
                 src="./images/products/img-2.jpg"
                 alt="Apple & Cranberry"
                 width="230"
-                height="201"
+                height="200"
+                loading="lazy"
               />
               <h3 class="products-name">Apple & Cranberry</h3>
               <p class="products-type">Milk chocolate</p>
@@ -340,10 +423,13 @@
             <li class="products-item">
               <img
                 class="products-pic"
+                srcset="./images/products/img-3.jpg 1x,
+                ./images/products/img-3@2x.jpg 2x"
                 src="./images/products/img-3.jpg"
                 alt="Lime & Sea Salt"
                 width="230"
-                height="201"
+                height="200"
+                loading="lazy"
               />
               <h3 class="products-name">Lime & Sea Salt</h3>
               <p class="products-type">Dark chocolate</p>
@@ -352,10 +438,13 @@
             <li class="products-item">
               <img
                 class="products-pic"
+                srcset="./images/products/img-4.jpg 1x,
+                ./images/products/img-4@2x.jpg 2x"
                 src="./images/products/img-4.jpg"
                 alt="Dark chocolate"
                 width="230"
-                height="201"
+                height="200"
+                loading="lazy"
               />
               <h3 class="products-name">Pineapple</h3>
               <p class="products-type">Dark chocolate</p>
@@ -364,10 +453,13 @@
             <li class="products-item">
               <img
                 class="products-pic"
+                srcset="./images/products/img-5.jpg 1x,
+                ./images/products/img-5@2x.jpg 2x"
                 src="./images/products/img-5.jpg"
                 alt="Milk chocolate"
                 width="230"
-                height="201"
+                height="200"
+                loading="lazy"
               />
               <h3 class="products-name">Classic</h3>
               <p class="products-type">Milk chocolate</p>
@@ -376,10 +468,13 @@
             <li class="products-item">
               <img
                 class="products-pic"
+                srcset="./images/products/img-6.jpg 1x,
+                ./images/products/img-6@2x.jpg 2x"
                 src="./images/products/img-6.jpg"
                 alt="Milk chocolate"
                 width="230"
-                height="201"
+                height="200"
+                loading="lazy"
               />
               <h3 class="products-name">Honey</h3>
               <p class="products-type">Milk chocolate</p>
@@ -388,10 +483,13 @@
             <li class="products-item">
               <img
                 class="products-pic"
+                srcset="./images/products/img-7.jpg 1x,
+                ./images/products/img-7@2x.jpg 2x"
                 src="./images/products/img-7.jpg"
                 alt="Dark chocolate"
                 width="230"
-                height="201"
+                height="200"
+                loading="lazy"
               />
               <h3 class="products-name">Roasted Fruits</h3>
               <p class="products-type">Dark chocolate</p>
@@ -403,7 +501,7 @@
                 src="./images/products/img-8.jpg"
                 alt="White chocolate"
                 width="230"
-                height="201"
+                height="200"
               />
               <h3 class="products-name">Classic</h3>
               <p class="products-type">White chocolate</p>
@@ -420,33 +518,65 @@
           </h2>
           <ul class="bestsellers-list">
             <li class="bestsellers-item">
-              <img
-                class="bestsellers-ill"
-                src="./images/bestellers/Wrapper.jpg"
-                alt="CHOCOLATE WITH NUTS"
-                width="368"
-                height="464"
-              />
+              <div class="bestsellers-thumb">
+                <img
+                  class="bestsellers-ill"
+                  srcset="./images/bestellers/Wrapper.jpg 1x,
+                  ./images/bestellers/Wrapper@2x.png 2x"
+                  src="./images/bestellers/Wrapper.jpg"
+                  alt="CHOCOLATE WITH NUTS"
+                  width="368"
+                  height="464"
+                  loading="lazy"
+                />
+                <p class="overlay">
+                  Chocolate with fruit is an unbeatable combination of two of
+                  the tastiest things in the world. This dessert combines
+                  delicate and aromatic chocolate with fresh and juicy fruits,
+                  creating a true poetry of taste.
+                </p>
+              </div>
               <h3 class="bestsellers-caption">CHOCOLATE WITH NUTS</h3>
             </li>
             <li class="bestsellers-item">
-              <img
-                class="bestsellers-ill"
-                src="./images/bestellers/ill-2.jpg"
-                alt="CHOCOLATE WITH FRUITS"
-                width="368"
-                height="464"
-              />
+              <div class="bestsellers-thumb">
+                <img
+                  class="bestsellers-ill"
+                  srcset="./images/bestellers/ill-2.jpg 1x,
+                  ./images/bestellers/ill-2@2x.png 2x"
+                  src="./images/bestellers/ill-2.jpg"
+                  alt="CHOCOLATE WITH FRUITS"
+                  width="368"
+                  height="464"
+                  loading="lazy"
+                />
+                <p class="overlay">
+                  Chocolate with fruit is an unbeatable combination of two of
+                  the tastiest things in the world. This dessert combines
+                  delicate and aromatic chocolate with fresh and juicy fruits,
+                  creating a true poetry of taste.
+                </p>
+              </div>
               <h3 class="bestsellers-caption">CHOCOLATE WITH FRUITS</h3>
             </li>
             <li class="bestsellers-item">
-              <img
-                class="bestsellers-ill"
-                src="./images/bestellers/ill-3.jpg"
-                alt="DARK CHOCOLATE"
-                width="368"
-                height="464"
-              />
+              <div class="bestsellers-thumb">
+                <img
+                  class="bestsellers-ill"
+                  srcset="./images/bestellers/ill-3.jpg 1x,
+                  ./images/bestellers/ill-3@2x.jpg 2x"
+                  src="./images/bestellers/ill-3.jpg"
+                  alt="DARK CHOCOLATE"
+                  width="368"
+                  height="464"
+                />
+                <p class="overlay">
+                  Chocolate with fruit is an unbeatable combination of two of
+                  the tastiest things in the world. This dessert combines
+                  delicate and aromatic chocolate with fresh and juicy fruits,
+                  creating a true poetry of taste.
+                </p>
+              </div>
               <h3 class="bestsellers-caption">DARK CHOCOLATE</h3>
             </li>
           </ul>
@@ -462,10 +592,13 @@
             <li class="reviews-item">
               <img
                 class="reviews-avatar"
+                srcset="./images/reviews/image.png 1x, 
+                ./images/reviews/img-1@2x.png 2x"
                 src="./images/reviews/image.png"
                 alt="Victoria Dobrzhanska"
                 width="80"
                 height="80"
+                loading="lazy"
               />
               <h3 class="reviews-author">Victoria Dobrzhanska</h3>
               <p class="reviews-text">
@@ -476,10 +609,13 @@
             <li class="reviews-item">
               <img
                 class="reviews-avatar"
+                srcset="./images/reviews/img-2.png 1x,
+                ./images/reviews/img-2@2x.png 2x"
                 src="./images/reviews/img-2.png"
                 alt="Nazar Babenko"
                 width="80"
                 height="80"
+                loading="lazy"
               />
               <h3 class="reviews-author">Nazar Babenko</h3>
               <p class="reviews-text">
@@ -491,6 +627,8 @@
             <li class="reviews-item">
               <img
                 class="reviews-avatar"
+                srcset="./images/reviews/img-3.png 1x,
+                ./images/reviews/img-3@2x.png 2x"
                 src="./images/reviews/img-3.png"
                 alt="Olena Kampusch"
                 width="80"
@@ -527,13 +665,9 @@
                   target="_blank"
                   rel="noopener noreferrrer"
                 >
-                  <img
-                    class="social-icon"
-                    src="./images/icons/facebook.svg"
-                    alt="facebook icon"
-                    width="24"
-                    height="24"
-                  />
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
                 </a>
               </li>
               <li class="socials-item">
@@ -543,13 +677,9 @@
                   target="_blank"
                   rel="noopener noreferrrer"
                 >
-                  <img
-                    class="social-icon"
-                    src="./images/icons/instagram.svg"
-                    alt="instagram icon"
-                    width="24"
-                    height="24"
-                  />
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
                 </a>
               </li>
               <li class="socials-item">
@@ -559,13 +689,9 @@
                   target="_blank"
                   rel="noopener noreferrrer"
                 >
-                  <img
-                    class="social-icon"
-                    src="./images/icons/twitter.svg"
-                    alt="the X icon"
-                    width="24"
-                    height="24"
-                  />
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -598,8 +724,185 @@
               <a class="footer-menu-link" href="#reviews">Chocolate is loved</a>
             </li>
           </ul>
+          <form class="footer-form" name="subscription">
+            <input
+              class="footer-form-input"
+              type="email"
+              name="subscription"
+              placeholder="Enter your email"
+            />
+            <button class="btn btn-filled" type="submit">Subscribe</button>
+          </form>
         </div>
       </div>
     </footer>
+    <!-- Modal window-->
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn" type="button" aria-label="Close modal button">
+          <svg class="modal-btn-icon" width="28" height="28">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <p class="modal-caption">
+          LEAVE A REVIEW ABOUT <span class="accent">OUR CHOCOLATE</span>
+        </p>
+        <form class="modal-form" name="review_form">
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user_name">Name</label>
+            <div class="modal-form-wrapper">
+              <input
+                class="modal-form-input"
+                type="text"
+                id="user_name"
+                name="user_name"
+                required
+                minlength="2"
+                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                title="Username must be two words separated by space."
+              />
+              <svg class="modal-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#user"></use>
+              </svg>
+              <svg class="error-icon" width="18" height="18">
+                <use href="./images/icons.svg#error"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user_email">Email</label>
+            <div class="modal-form-wrapper">
+              <input
+                class="modal-form-input"
+                type="email"
+                id="user_email"
+                name="user_email"
+                required
+              />
+              <svg class="modal-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+              <svg class="error-icon" width="24" height="24">
+                <use href="./images/icons.svg#error"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user_phone"
+              >Phone number</label
+            >
+            <div class="modal-form-wrapper">
+              <input
+                class="modal-form-input"
+                type="tel"
+                id="user_phone"
+                name="user_phone"
+              />
+              <svg class="modal-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user_comment">Comment</label>
+            <textarea
+              class="modal-form-comment"
+              cols="4"
+              name="user_comment"
+              id="user_comment"
+              placeholder="Enter text"
+              required
+              minlength="20"
+            ></textarea>
+          </div>
+          <div class="modal-form-agreement">
+            <input
+              class="checkbox sr-only"
+              type="checkbox"
+              name="user_policy"
+              id="user_policy"
+              required
+            />
+            <label class="modal-form-policy" for="user_policy">
+              <span class="modal-form-checkbox">
+                <svg class="modal-form-checkbox-icon" width="10" height="10">
+                  <use href="./images/icons.svg#checkmark"></use>
+                </svg>
+              </span>
+              <span>
+                I accept the terms and conditions of the
+                <a
+                  class="modal-form-link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Privacy Policy
+                </a>
+              </span>
+            </label>
+          </div>
+          <button class="btn btn-filled" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- Mobale menu-->
+    <div class="mobale-menu">
+      <div class="mobale-menu-container">
+        <button class="mobile-menu-btn">
+          <svg class="mobile-menu-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="mobale-menu-list">
+          <li class="mobale-menu-item">
+            <a href="#" class="mobale-menu-link active">Home</a>
+          </li>
+          <li class="mobale-menu-item">
+            <a href="#" class="mobale-menu-link">How it’s made?</a>
+          </li>
+          <li class="mobale-menu-item">
+            <a href="#" class="mobale-menu-link">Chocolate is loved</a>
+          </li>
+        </ul>
+        <ul class="socials socials-light">
+          <li class="socials-item">
+            <a
+              class="socials-link"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrrer"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a
+              class="socials-link"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrrer"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a
+              class="socials-link"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrrer"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

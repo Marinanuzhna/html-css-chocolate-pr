@@ -34,7 +34,10 @@ address {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
+
 /* Base styles*/
 .sr-only {
   position: absolute;
@@ -49,39 +52,76 @@ img {
   margin: -1px;
 }
 .section {
-  padding: 60px 0;
+  padding: 40px 0;
+}
+@media only screen and (min-width: 768px) {
+  .section {
+    padding: 50px 0;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .section {
+    padding: 60px 0;
+  }
 }
 .section-title {
-  max-width: 412px;
-  margin: 0 auto 50px;
+  max-width: 284px;
+  margin: 0 auto 32px;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-align: center;
   text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .section-title {
+    max-width: 412px;
+    margin: 0 auto 50px;
+
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 .accent {
   color: #fd9222;
 }
 .container {
-  max-width: 1168px;
-  padding: 0 16px;
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px;
   margin: 0 auto;
-
-  outline: 2px solid red;
-  outline-offset: -2px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  .container {
+    max-width: 1168px;
+    padding: 0 16px;
+  }
 }
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
 
   font-weight: 700;
-  font-size: 18px;
-  line-height: 1.11;
+  font-size: 14px;
+  line-height: 1.29;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+}
+@media only screen and (min-width: 1168px) {
+  .logo {
+    gap: 4px;
+
+    font-size: 18px;
+    line-height: 1.11;
+  }
 }
 .logo-icon {
 }
@@ -103,25 +143,49 @@ img {
   height: 100%;
 
   border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 10px;
+
+  transition: 300ms ease-out;
+  transition-property: border-color;
 }
 .socials-light .socials-link {
-  background-color: #fff;
+  border-color: 1px solid rgba(255, 255, 255, 0.1);
+}
+.socials-light .social-icon {
+  color: #fff;
 }
 .socials-link:hover,
 .socials-link:focus {
-  border: 1px solid rgba(253, 146, 34, 0.1);
+  border-color: rgba(253, 146, 34, 0.1);
 }
 .social-icon {
+  color: #111111;
+  transition: 300ms ease-out;
+  transition-property: color;
   font-weight: 148px;
   line-height: 40px;
 }
+.socials-link:hover .social-icon,
+.socials-link:focus .social-icon {
+  color: #fd9222;
+}
 /*Buttom*/
 .btn {
-  padding: 14px 40px;
+  padding: 12px 26px;
+
   font-weight: 600;
+
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 100px;
+
+  transition: 300ms ease-out;
+  transition-property: color, background-color, border-color;
+}
+@media only screen and (min-width: 768px) {
+  .btn {
+    padding: 14px 40px;
+  }
 }
 .btn-filled {
   color: #fff;
@@ -132,9 +196,6 @@ img {
   background-color: rgba(253, 146, 34, 0.1);
   color: #fd9222;
   border-radius: 100px;
-  padding: 14px 40px;
-  font-weight: 144px;
-  line-height: 46px;
 }
 .btn-outlined {
 }

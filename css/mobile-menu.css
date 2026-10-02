@@ -1,0 +1,83 @@
+.mobale-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  transform: translateX(100%);
+  transition: 300ms ease-out;
+  transition-property: transform;
+  opacity: 0;
+  overflow: hidden;
+
+  background-color: #1e1823;
+}
+.mobale-menu.is-open {
+  transform: translateX(0);
+  opacity: 1;
+  overflow: visible;
+}
+@media only screen and (min-width: 768px) {
+  .mobale-menu {
+    display: none;
+  }
+}
+.mobale-menu-container {
+  display: flex;
+  flex-direction: column;
+  padding-block: 72px 40px;
+  padding-inline: 20px;
+  height: 100%;
+}
+.mobile-menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  transition: 300ms ease-in-out;
+  transition-property: color;
+}
+.header .mobile-menu-btn {
+  margin-left: auto;
+}
+@media only screen and (min-width: 768px) {
+  .header .mobile-menu-btn {
+    display: none;
+  }
+}
+.mobale-menu .mobile-menu-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.mobale-menu .mobile-menu-btn-icon {
+  color: #fff;
+}
+.mobile-menu-btn:hover .mobile-menu-btn-icon,
+.mobile-menu-btn:focus .mobile-menu-btn-icon {
+  color: #fd9222;
+}
+.mobile-menu-btn-icon {
+}
+.mobale-menu-list {
+  margin-bottom: auto;
+}
+.mobale-menu-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.mobale-menu-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+.mobale-menu-link.active {
+  color: #fd9222;
+}

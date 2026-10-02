@@ -1,23 +1,82 @@
 .ingr {
-  padding-top: 120px;
+  padding-top: 80px;
 }
-
-.ingr-title {
+@media only screen and (min-width: 768px) {
+  .ingr {
+    padding-top: 100px;
+  }
 }
-
+@media only screen and (min-width: 1168px) {
+  .ingr {
+    padding-top: 120px;
+  }
+}
 .ingr-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+
   gap: 32px;
 }
+@media only screen and (min-width: 768px) {
+  .ingr-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .ingr-item {
-  width: calc((100% - 32px * 3) / 4);
+  position: relative;
 
   border-radius: 15px;
-  padding: 28px 24px;
+  padding: 32px 28px 28px;
+}
+@media only screen and (max-width: 767.98px) {
+  .ingr-item:nth-last-child(-n + 3) {
+    display: none;
+  }
+}
+.ingr-item @media only screen and (min-width: 768px) {
+  .ingr-item {
+    flex-wrap: wrap;
+    width: calc((100% - 32px) / 2);
+
+    padding: 28px 24px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .ingr-item {
+    width: calc((100% - 32px * 3) / 4);
+  }
+}
+.ingr-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.ingr-icon {
+}
+.ingr-item:nth-child(2n) .ingr-icon {
+  color: #fd9222;
+}
+.ingr-item:nth-child(2n + 1) .ingr-icon {
+  color: #fff;
 }
 .ingr-ill {
-  margin-bottom: 36px;
+  margin: 0 auto 16px;
+}
+@media only screen and (min-width: 1168px) {
+  .ingr-ill {
+    width: 212px;
+    height: 160px;
+    margin-bottom: 0 auto 36px;
+  }
 }
 .ingr-item:nth-child(2n) {
   background-color: #fff;
